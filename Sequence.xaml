@@ -1,0 +1,388 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1487,4336" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="802,4271" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Phase 2" sap:VirtualizedContainerService.HintSize="740,4160" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="p:PythonObject" Name="result" />
+        <Variable x:TypeArguments="x:Int32" Name="resultString" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Clerk Michelle R. Miller" sap:VirtualizedContainerService.HintSize="678,4049" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="bab38740-c452-4e90-bbce-e97b197ba760" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="644,3832" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="OutputCaptcha" />
+                <Variable x:TypeArguments="x:String" Name="FirstDigit" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582,408" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,329" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bab38740-c452-4e90-bbce-e97b197ba760" Text="[ClientName]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://courtcasesearch.stlucieclerk.gov/BenchmarkWebExternal/Home.aspx/Search" CvElementArea="341, 292, 186, 28" CvType="InputBox" DesignTimeRectangle="342, 293, 184, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT name'" FullSelectorArgument="&lt;webctrl parentid='mainTableContent' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='name' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mainTableContent' tag='TABLE' /&gt;&lt;webctrl id='name' type='text' tag='INPUT' class='popoverElement searchInput' aaname='Name' /&gt;" Guid="efc5981e-4009-45a2-b434-6280e17417f2" InformativeScreenshot="70d99b667290e1c5999e3ac1840f1192.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="295, 298, 39, 13" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="291, 289, 47, 32" ElementType="Text" FriendlyName="'Name'" FullSelectorArgument="&lt;webctrl parentid='mainTableContent' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='searchLabel' tableRow='3' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mainTableContent' tag='TABLE' /&gt;&lt;webctrl class='searchLabel' type='' tag='LABEL' aaname='Name' check:innerText='Name' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="582,423" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,344" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTakeScreenshot DisplayName="Take Screenshot 'IMG'" FileName="C:\Users\aliza\Desktop\screenshot\screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="388,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" OutImage="[Image]" ScopeIdentifier="bab38740-c452-4e90-bbce-e97b197ba760" Version="V3">
+                      <uix:NTakeScreenshot.Target>
+                        <uix:TargetAnchorable BrowserURL="https://courtcasesearch.stlucieclerk.gov/BenchmarkWebExternal/Home.aspx/Search?error=Invalid%20Captcha" CvTextArea="458, 505, 200, 36" CvTextArgument="25 = ?" CvType="Text" DesignTimeRectangle="453, 496, 260, 60" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='mainTableContent' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mainTableContent' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='' aaname='Captcha' /&gt;" Guid="dea3fc39-1513-415f-b3e7-5df7ca89b06d" ImageBase64="" InformativeScreenshot="dd0241bc41b50279b933d4d758c6066b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="363, 516, 57, 18" CvTextArgument="Search" CvType="Text" DesignTimeRectangle="303, 501, 145, 51" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl parentid='mainTableContent' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='searchButton' tableRow='3' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mainTableContent' tag='TABLE' /&gt;&lt;webctrl id='searchButton' type='submit' tag='BUTTON' class='btn btn-primary btn-large' aaname='Search' check:innerText='Search' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTakeScreenshot.Target>
+                    </uix:NTakeScreenshot>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <p:PythonScope DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="582,2806" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\aliza\AppData\Local\Programs\Python\Python38\python3.dll" OperationTimeout="10" Path="C:\Users\aliza\AppData\Local\Programs\Python\Python38" TargetPlatform="x64" Version="Python 3.8">
+                <p:PythonScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,2769" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="p:PythonObject" Name="pyScript" />
+                        <Variable x:TypeArguments="ui:Image" Name="imagee" />
+                        <Variable x:TypeArguments="x:Int32" Name="sum" />
+                        <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="resulttt" />
+                        <Variable x:TypeArguments="p:PythonObject" Name="pyObj" />
+                        <Variable x:TypeArguments="p:PythonObject" Name="Obj" />
+                        <Variable x:TypeArguments="x:Object" Name="Object1" />
+                        <Variable x:TypeArguments="x:String" Name="result_txt" />
+                        <Variable x:TypeArguments="x:String" Default="C:\Users\aliza\Desktop\screenshot\output_digits.txt" Name="notepadpath" />
+                        <Variable x:TypeArguments="x:String" Name="number1" />
+                        <Variable x:TypeArguments="x:String" Name="number2" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="486,60" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[pyScript]" ScriptFile="C:\Users\aliza\Desktop\screenshot\new.py" />
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,25" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,136" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TryCatch.Try>
+                                <Sequence sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="454,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="si:IOException">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[exception.Message]" />
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <ui:ReadTextFile File="{x:Null}" Content="[result_txt]" DisplayName="Read Text File" FileName="[notepadpath]" sap:VirtualizedContainerService.HintSize="486,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                      <ui:Matches BuilderPattern="(\d+)(?=\s*\+)" DisplayName="Find Matching Patterns" FirstMatch="[number1]" sap:VirtualizedContainerService.HintSize="486,60" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[result_txt]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(\\d+)(?=\\s*\\+)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d+)(?=\s*\+)" RegexOption="IgnoreCase, Compiled" />
+                      <ui:Matches BuilderPattern="(?&lt;=\+\s*)\d+(?=\s*=)" DisplayName="Find Matching Patterns" FirstMatch="[number2]" sap:VirtualizedContainerService.HintSize="486,60" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[result_txt]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=\\+\\s*)\\d+(?=\\s*=)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=\+\s*)\d+(?=\s*=)" RegexOption="IgnoreCase, Compiled" />
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="486,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[number1]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[sum]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(number1) + Convert.ToInt32(number2)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="486,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[sum.ToString]" />
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bab38740-c452-4e90-bbce-e97b197ba760" Text="[sum.ToString + &quot;[k(Enter)]&quot;]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://courtcasesearch.stlucieclerk.gov/BenchmarkWebExternal/Home.aspx/Search" CvElementArea="752, 460, 192, 29" CvType="InputBox" DesignTimeRectangle="753, 513, 189, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl parentid='mainTableContent' tableRow='1' tag='TABLE' /&gt;&lt;webctrl name='captcha' tableRow='3' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mainTableContent' tag='TABLE' /&gt;&lt;webctrl name='captcha' class='' tag='INPUT' type='text' aaname='' /&gt;" Guid="11e33aa1-7078-462f-b21a-6deddbd4b7f6" InformativeScreenshot="622179d95f7ec9a9de0e081ddb75215f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,347" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DisplayName="Get Text 'Case Number'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="bab38740-c452-4e90-bbce-e97b197ba760" TextString="[CaseNumber]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://courtcasesearch.stlucieclerk.gov/BenchmarkWebExternal/CourtCase.aspx/Details/2117957?digest=HlzFltvEGT6iA2wyNBRcVw" CvTextArea="449, 326, 89, 12" CvType="AnyWordGroup" DesignTimeRectangle="451, 323, 103, 20" DesignTimeScaleFactor="1" FriendlyName="'2013CF001750 A'" FullSelectorArgument="&lt;webctrl parentid='summaryAccordionCollapse' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='casenumber' tableRow='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='summaryAccordionCollapse' tag='TABLE' /&gt;&lt;webctrl class='casenumber' type='' tag='DD' /&gt;" Guid="7c753bc5-a9e3-40ef-91d8-531c4b174ece" InformativeScreenshot="b636c03eb6ff67df5cb98466cb677c3a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2013CF001750 A - STATE OF FLORIDA vs. ACOSTA, BRUCE' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="351, 326, 80, 12" CvTextArgument="Case Number:" CvType="Text" DesignTimeRectangle="271, 323, 160, 20" FriendlyName="'Case Number'" FullSelectorArgument="&lt;webctrl parentid='summaryAccordionCollapse' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='casenumber' tableRow='1' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='summaryAccordionCollapse' tag='TABLE' /&gt;&lt;webctrl class='casenumber' type='' tag='DT' aaname='Case Number:' check:innerText='Case Number:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,347" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bab38740-c452-4e90-bbce-e97b197ba760" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://courtcasesearch.stlucieclerk.gov/BenchmarkWebExternal/CourtCase.aspx/Details/2117957?digest=HlzFltvEGT6iA2wyNBRcVw" DesignTimeRectangle="1285, 202, 24, 13" DesignTimeScaleFactor="1" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl parentid='mainTableContent' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mainTableContent' tag='TABLE' /&gt;&lt;webctrl type='' tag='I' class='icon-file-alt icon-large icon-fixed-width' aaname='' /&gt;" Guid="9f381fb5-803e-4c77-95a3-222164df7af2" InformativeScreenshot="f4698d1be2589a4fdb39b1c6543185b9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2013CF001750 A - STATE OF FLORIDA vs. ACOSTA, BRUCE' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Print'" sap:VirtualizedContainerService.HintSize="486,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bab38740-c452-4e90-bbce-e97b197ba760" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://courtcasesearch.stlucieclerk.gov/BenchmarkWebExternal/CourtCase.aspx/DetailsPrint/2117957?digest=HlzFltvEGT6iA2wyNBRcVw" CvTextArea="1354, 206, 39, 17" CvTextArgument="Print" CvType="Text" DesignTimeRectangle="1295, 191, 126, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Print'" FullSelectorArgument="&lt;webctrl id='printView' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='printView' tag='BUTTON' type='' class='btn btn-primary btn-large' aaname='Print' check:innerText='Print' /&gt;" Guid="a41ae968-dbeb-44fa-82be-83f722e8ea70" InformativeScreenshot="8a488824c0aa2e9d86eb99ba555091a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2013CF001750 A - STATE OF FLORIDA vs. ACOSTA, BRUCE' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe 2013CF001750'" sap:VirtualizedContainerService.HintSize="486,572" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="7fb699276d5cb097f2357688c1a30000" Selector="&lt;html app='chrome.exe' title='2013CF001750 A - STATE OF FLORIDA vs. ACOSTA, BRUCE' /&gt;">
+                        <ui:BrowserScope.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,425" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="035aed79-b77a-407b-89f6-dcee474c90ed">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9ad79315-ff07-4933-9e2d-eae523b15464">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:BrowserScope.Body>
+                      </ui:BrowserScope>
+                    </Sequence>
+                  </ActivityAction>
+                </p:PythonScope.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </p:PythonScope>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1456, 876" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJkSURBVDhPlZNbSNNxFMdXPfQSvQVBUlBRkPgU2JY+RDciqFALIksL9MEiFyVqD+YyTRElja1AUdBkW+mal3lZtjRzmzZYy3WxUOZDCY0u2/67+fTtd45tbeZLD1/+l9/vfM73nN/5yVIUxTiUe/e/dfh8LShWlnmmCuoOM56YbHEZhqZYjwdsQlb00PfwFD+7B+3Q91vRon3OEJk8q5IXg8GQUBA+fwBjNjfu3DegpKYLN6of4Wa9Drq+SYxOuOB6Pw9JkqAXYHLCAOPINKKRCL55f6CsTou0Y+Wo1fRiyjmL6TefoOkYQfqpCmxOv4JWnQWRSJid/gWYX0MS2ctF8IbUAjS0DDAwpqWlKMMIXKM2IhxeAegfdcAy+Rab9hYh9WgZ5jxfOUsoFIqLIG16C5dFpSYBeoUDqnXN9gs4WdjIfUgMJlHWL4teDI85EQhICYDsSu7q8Uv1DDinVHM5KwHLkBAiAiRJCQ4U2Sp0GSdw4Gw11u7Iw4mCBvh8/lUBMSUByEG3yY6coias25nHjZpfWORMqwWTkgF/mlj3sA/rd1/ExrRCdBpectNWBlIffgl3/qQeCEDfMwfcswvYc6RUuMgHuZr54GEIH2VUHKXQzEcPmtoG4f3+kycyDogNkrb3FbZlKrmUfVm32InD9Rnj9ndobDUh//oDvLDO/HuMNEiUhc6exjj3mga7DpZga4ZSzEUp5AJ2uaIdTvccO6GxjwP256jQ3D7Es0CifpA9tRjfqmYDVPd6+J3uC63RnqfiXdNpXgZskV8FQcgJ1R4T/cs4fZvF6wlrtJducYqiGL8BG3/sSd7J5lMAAAAASUVORK5CYII=" InformativeScreenshot="d8916d6d2a00190c0d62e8db0f169854.jpg" Selector="&lt;html app='chrome.exe' title='Clerk Michelle R. Miller' /&gt;" Title="Clerk Michelle R. Miller" Url="https://courtcasesearch.stlucieclerk.gov/BenchmarkWebExternal/Home.aspx/Search" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
